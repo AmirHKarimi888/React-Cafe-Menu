@@ -6,4 +6,22 @@ class Actions {
     constructor() {
 
     }
+
+    async get(url) {
+        await axios.get(url);
+    }
+
+    async post(url, data) {
+        await axios.post(url, data);
+    }
+
+    async put(url, data) {
+        await axios.put(url, data);
+    }
+
+    async delete(url) {
+        await axios.delete(url);
+    }
 }
+
+export const Action = new Actions();
